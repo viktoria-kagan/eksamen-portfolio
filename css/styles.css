@@ -299,32 +299,34 @@ img{
     width: 100%;
 }
 
+#scrollArrow{
+  display: none;
+}
 
-
-   
 @media (width>650px){
-  /* .hero{
-    display: grid;
+  .hero-sektion{
+    
     position: relative;
 
 }
-
 .portfolio-img{
-    grid-area: 1/1;
+   
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 1;
 
 }
-
-.pil-ned{
-    grid-area: 1/1;
-    display: flex;
+#scrollArrow{
+  position: absolute;
+margin-top: -25rem;
+  display: flex;
     z-index: 2;
     scale: 10%;
     justify-items: end;
-} */
+    cursor: pointer;
+}
+#scrollArrow :hover{
+transform:scale(1.1)}
 
 .burger{display: none;}
 .menu{display: flex;
@@ -460,6 +462,15 @@ img.forside-img{
 }
 
 @media (width>1200px){
+  
+
+}
+#scrollArrow{
+ 
+margin-top: -30rem;
+
+}
+
   .iframe-wrapper{
   margin-bottom: 6rem;
 }
@@ -496,4 +507,4 @@ img.forside-img{
 
   margin-top: 8rem;
 }
-}
+

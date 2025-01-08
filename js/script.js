@@ -8,6 +8,13 @@ burger.addEventListener("click", () => {
   menu.classList.toggle("active");
   T1.classList.toggle("close");
 });
+document.getElementById("scrollArrow").addEventListener("click", function () {
+  // Find sektionen længere nede på siden
+  const targetSection = document.getElementById("menu");
+
+  // Scroll til sektionen
+  targetSection.scrollIntoView({ behavior: "smooth" });
+});
 
 // document.querySelector("#boks").addEventListener("click", pauseAnimation);
 
