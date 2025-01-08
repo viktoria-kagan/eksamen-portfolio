@@ -10,7 +10,7 @@
 main{
   /* max-width: 1200px; */
   /* width: 80%; */
-  padding: 10% 10%;    
+  padding: 5% 10%;    
   line-height: 1.6;
 
 }
@@ -27,19 +27,25 @@ body {
     background-color: #CEC8B2;
 
   }
-
   .navbar{
     display: flex; 
     justify-content: space-around;
     width: 100%;
     background-color: #CEC8B2;
+    padding: 1rem;
   }
   
 .navbar img{
   width: 10rem;
+  height: 2rem;
+}
+
+img.T{
+  width: 3rem;
 }
 
 img.T0{
+  margin-left: -8rem;
   width: 3rem;
   /* margin-right: 4rem; */
   /* border: solid 1px #F1ECD9; */
@@ -53,7 +59,7 @@ img.T0{
   background-color: #CEC8B2;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 25%;
+  gap: 150%;
 }
 
   .burger {
@@ -84,6 +90,28 @@ img.T0{
     width: 100%;
   }
   
+  #boks {
+    width: 100px;
+    height: 100px;
+    background-color: #626E6A;
+    margin: 50px auto;
+    animation: rotate 2s linear infinite; /* 2 sekunders rotation, gentager uendeligt */
+    cursor: pointer;    /* Giver en klikmarkør, så det er tydeligt, at boksen kan klikkes */
+
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg); /* Startposition */
+    }
+    100% {
+      transform: rotate(360deg); /* Fuld rotation */
+    }
+  }
+  .paused {
+    animation-play-state: paused;
+  }
+
   .menu.active {
     display: flex;
   }
@@ -109,6 +137,10 @@ img.T0{
     transform: rotate(-45deg) translate(5px, -5px);
   }
   
+.close{
+  display: none;
+}
+
   nav ul li {
     display: inline;
   }
@@ -138,8 +170,8 @@ img{
 margin-top: 1rem;
 margin-bottom: -1rem;
     color: #626E6A;
-    text-align: center;
-   
+    text-align: left;
+    margin-left: -1rem;   
   }
   h2 {
     font-family: "Bebas Neue", serif;
@@ -149,7 +181,8 @@ margin-bottom: -1rem;
   margin-top: 1rem;
   margin-bottom: -1rem;
       color: #8B998C;
-      text-align: center;
+      text-align: left;
+      margin-left: 1rem;
      
     }
     
@@ -298,7 +331,26 @@ img{
 flex-direction: row;
 justify-content:space-around;
 
+
 }
+.button{
+  font-size: 25px;
+  width: 10rem;
+}
+h1{
+  font-size: 60px;
+  text-align: left;
+  margin-left: -2rem;
+}
+h2{
+  font-size: 40px;
+  text-align: left;
+  margin-left:2rem;
+}
+p{font-size: 20px;}
+img.T0{
+  margin-left: 0;}
+
 #T1{margin: -10rem;
   display: none;
 }
@@ -331,29 +383,34 @@ img.forside-img{
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 5%;
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-bottom: 8REM;
 }
 .team-1{
   margin-top: 4rem;
 }
 .image{
+  margin-top: 10rem;
   grid-column: 2/4;
   grid-row: 1/3;
 }
 #cv{
   grid-column: 2/4;
   grid-row: 1/3;
+  margin-bottom: 5rem;
 }
 #skills{
   grid-column: 2/4;
   grid-row: 2/4;
+  margin-top: 12rem;
 }
 .profile-image{
+  margin-top: 5rem;
   grid-column: 1/2;
   grid-row: 1/4;
 }
 #why-mmd{
-  margin-top: -20%;
+  margin-top: -4rem;
 }
 .section1{
   margin-bottom: 30%;
@@ -368,10 +425,10 @@ img.forside-img{
   margin-top: 1rem;
 }
 .kagan-turist{
-  margin-top: -30rem;
+  margin-top: -40rem;
 }
 .p-up{
-  margin-top: -30rem;
+  margin-top: -40rem;
 }
 .iframe-wrapper{
   margin-bottom: -4rem;
@@ -401,19 +458,42 @@ img.forside-img{
   margin-bottom: -10rem;
 }
 }
-@media (width>900px){
+
+@media (width>1200px){
   .iframe-wrapper{
   margin-bottom: 6rem;
 }
   .kagan-turist{
-    margin-top: -22rem;
+    margin-top: -30rem;
   }
   .p-up{
-    margin-top: -22rem;
+    margin-top: -30rem;
   }
   .pil-op{
     width: 90%;
      margin-top: 2rem;
-     margin-bottom: -12rem;
+     margin-bottom: -10rem;
    }
+   #passionssite, #javascript, #prototype, #website{
+    margin-top: 10rem;
+  }
+ .grid20{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5%;
+ }
+ .grid10{
+  margin-top: -15rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5%;
+ }
+ #why-mmd{
+  margin-top: -6rem;
+}
+
+#skills{
+
+  margin-top: 8rem;
+}
 }
