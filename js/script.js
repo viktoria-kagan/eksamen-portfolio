@@ -1,19 +1,20 @@
 const burger = document.getElementById("burger");
 const menu = document.getElementById("menu");
 const T1 = document.getElementById("T1");
-const boks = document.getElementById("boks");
+const scrollArrow = document.getElementById("scrollArrow");
 
-burger.addEventListener("click", () => {
-  burger.classList.toggle("open");
-  menu.classList.toggle("active");
-  T1.classList.toggle("close");
-});
+// const boks = document.getElementById("boks");
 document.getElementById("scrollArrow").addEventListener("click", function () {
   // Find sektionen længere nede på siden
   const targetSection = document.getElementById("menu");
 
   // Scroll til sektionen
   targetSection.scrollIntoView({ behavior: "smooth" });
+});
+burger.addEventListener("click", () => {
+  burger.classList.toggle("open");
+  menu.classList.toggle("active");
+  T1.classList.toggle("close");
 });
 
 // document.querySelector("#boks").addEventListener("click", pauseAnimation);
