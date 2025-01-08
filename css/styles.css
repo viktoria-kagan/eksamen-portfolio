@@ -188,7 +188,7 @@ margin-bottom: -1rem;
     
 /* Styling for the button */
 .button {
-  
+  margin-top: 1rem;
   display: flex;
   border-top: 2px solid #F1ECD9;
   border-bottom: 2px solid #F1ECD9; 
